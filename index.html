@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>KLIK UNTUK HADIAH</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: sans-serif;
+      padding-top: 100px;
+      background-color: #fefefe;
+    }
+    button {
+      font-size: 24px;
+      padding: 20px;
+      background-color: gold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Selamat! Klik tombol untuk klaim hadiahmu!</h1>
+  <button onclick="playSound()">KLIK DI SINI</button>
+
+  <audio id="prankAudio">
+    <source src="jawa.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <script>
+    function playSound() {
+      const audio = document.getElementById("prankAudio");
+      audio.play();
+    }
+  </script>
+</body>
+</html>
